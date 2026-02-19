@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RMAGEDDON 2026 - Registration Open</title>
+    
+    <link href="https://fonts.cdnfonts.com/css/ethnocentric" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/otomanopee-one" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Ethnocentric Rg', 'Conthrax', sans-serif;
+            background-color: #f4f4f4;
+            padding: 0; margin: 0; width: 100% !important;
+            -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
+        }
+        .email-wrapper { width: 100%; background-color: #f4f4f4; padding: 10px; }
+        .email-container {
+            max-width: 650px; margin: 0 auto;
+            background-image: url('https://res.cloudinary.com/derjw5vy6/image/upload/v1771527058/new_background_2_nyrgyh.jpg');
+            background-size: cover; background-position: center; background-repeat: no-repeat;
+            position: relative; overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); width: 100%;
+             backdrop-filter: blur(30px);
+        }
+        .header { padding: 20px 25px 10px 25px; position: relative; z-index: 2; }
+        /* header layout using table for better email client support */
+        .header-table { width: 100%; border-collapse: collapse; margin-bottom: 12px; }
+        .header-table td { vertical-align: middle; }
+        .logo { width: 100px; height: auto; display: block; }
+        .title-img { display: block; max-width: 280px; width: 100%; height: auto; margin: 0 auto; }
+        .mission {
+            font-size: 26px; color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            margin: 5px 0 12px 0; font-weight: bold; letter-spacing: 1px;
+            font-family: 'Otomanopee One', sans-serif; line-height: 1.3; text-align: center;
+        }
+        .main-heading {
+            font-size: 24px; margin: 10px 0 12px 0; color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            font-family: 'Otomanopee One', sans-serif; line-height: 1.3; text-align: center;
+        }
+        .description {
+            color: #ffffff; font-size: 14px; line-height: 1.5;
+            padding: 0 30px; margin-bottom: 25px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+            font-family: 'Otomanopee One', sans-serif; text-align: center;
+        }
+        .event-details {
+            background-image: url('https://res.cloudinary.com/derjw5vy6/image/upload/f_png,q_auto/v1771177398/frame7_dgyezt.png');
+            background-size: 100% 100%;
+            background-position: center; 
+            align-items: center;
+            background-repeat: no-repeat;
+            padding: 55px 35px; 
+            margin: 30px 35px 25px 35px;
+            border-radius: 10px;
+            min-height: 180px;
+        }
+        .event-table { width: 100%; border-collapse: collapse; text-align: center; }
+        .event-table tr { border: none; }
+        .event-table td {
+            color: #ffffff; font-family: 'Otomanopee One', sans-serif;
+            font-size: 18px; line-height: 1.6; padding: 12px 8px; vertical-align: middle; text-align: center; display: inline-block; width: 100%;
+        }
+        .event-table .label { font-weight: bold; padding-right: 8px; display: block; width: 100%; }
+        .event-table .value { width: 100%; display: block; padding-top: 4px; }
+        .cta-button { text-align: center; margin: 10px 20px 35px 20px; position: relative; z-index: 4; }
+        .cta-button a {
+            display: inline-block;
+            background: linear-gradient(135deg, #9e0624 0%, #dc143c 100%);
+            color: #ffffff !important; text-decoration: none;
+            padding: 16px 50px; border-radius: 50px;
+            font-family: 'Otomanopee One', sans-serif;
+            font-size: 24px; font-weight: bold; text-transform: uppercase;
+            letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            box-shadow: 0 6px 20px rgba(220, 20, 60, 0.4);
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+        .pic { position: absolute; bottom: 0; left: 0; z-index: 3; }
+        .pic img { width: 170px; height: auto; display: block; }
+        .footer {
+            padding: 20px 25px 60px 25px; color: #ffffff; font-size: 13px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            position: relative;
+            font-family: 'Otomanopee One', sans-serif;
+        }
+        .footer-content { text-align: center; }
+        .footer p { margin-bottom: 4px; }
+        .footer a { color: #ffffff !important; text-decoration: none; font-weight: bold; }
+        .social-icons {
+            text-align: center; margin-top: 10px; display: block;
+        }
+        .social-icons a {
+            display: inline-block; text-align: center;
+            width: 36px; height: 36px; line-height: 36px; vertical-align: middle;
+            
+        }
+        .social-icons a:hover { background: rgba(255,255,255,0.3); }
+        .social-icons img { width: 18px; height: 18px; display: inline; vertical-align: middle; }
+
+        @media only screen and (max-width: 650px) {
+            .email-wrapper { padding: 5px !important; }
+            .email-container { width: 100% !important; }
+            .header { padding: 15px 10px 8px !important; }
+            .header-top { gap: 5px !important; margin-bottom: 12px !important; flex-wrap: wrap !important; }
+            .logo { width: 60px !important; height: 100% !important; }
+            .title-img { width: 150px !important; max-width: 150px !important; }
+            .mission { font-size: 15px !important; margin: 4px 0 8px 0 !important; }
+            .main-heading { font-size: 14px !important; margin: 6px 0 8px 0 !important; }
+            .description { font-size: 11px !important; padding: 0 15px !important; margin-bottom: 12px !important; }
+            .event-details { padding: 20px 15px !important; margin: 0 15px 18px 15px !important; min-height: auto !important; }
+            .event-table td { font-size: 13px !important; padding: 8px 5px !important; line-height: 1.4 !important; }
+            .cta-button { margin: 8px 15px 25px 15px !important; }
+            .cta-button a { padding: 12px 28px !important; font-size: 17px !important; letter-spacing: 1px !important; }
+            .pic img { width: 120px !important; }
+            .footer { padding: 15px 15px 30px 15px !important; font-size: 11px !important; }
+            .footer-content { text-align: center !important; }
+            .social-icons { justify-content: center !important; }
+            .social-icons a { width: 30px !important; height: 30px !important; line-height: 30px !important; }
+            .social-icons img { width: 15px !important; height: 15px !important; }
+        }
+        @media only screen and (max-width: 490px) {
+            .pic { display: none !important; }
+            .footer { padding-bottom: 20px !important; }
+        }
+        @media only screen and (max-width: 375px) {
+            .logo { width: 50px !important; height: 100% !important; min-width: 40px !important; min-height: 40px !important; }
+            .title-img { width: 110px !important; max-width: 110px !important; }
+            .mission { font-size: 13px !important; }
+            .main-heading { font-size: 12px !important; }
+            .description { font-size: 10px !important; padding: 0 12px !important; }
+            .event-details { padding: 16px 12px !important; margin: 0 12px 15px 12px !important; }
+            .event-table td { font-size: 12px !important; padding: 6px 4px !important; }
+            .cta-button a { padding: 10px 22px !important; font-size: 15px !important; }
+        }
+
+        @media only screen and (max-width: 350px) {
+            .logo {
+                width: 40px !important;
+                min-width: 36px !important;
+                height: 40px !important;
+                min-height: 36px !important;
+                max-width: 44px !important;
+                max-height: 44px !important;
+            }
+        }
+        }
+        img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; }
+        a { color: #ffffff; }
+        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; width: 100%; background-color: #f4f4f4;">
+
+    <div class="email-wrapper">
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;background-color:#f4f4f4;">
+            <tr>
+                <td align="center" style="padding:0;">
+
+                    <div class="email-container">
+
+                        <!-- ── HEADER ── -->
+                        <div class="header">
+                            <!-- use a table for header to avoid flexbox glitches in email clients -->
+                            <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; margin-bottom:12px;">
+                                <tr>
+                                    <td align="left" width="100" style="width:100px; min-width:100px; max-width:100px;">
+                                        <img src="https://res.cloudinary.com/derjw5vy6/image/upload/f_png,q_auto/v1771177757/RMAGEDDON_LOGO-01_kwfmrd.png" alt="Rmageddon Logo" style="display:block; width:90px; height:90px; min-width:90px; min-height:90px; max-width:90px; max-height:90px; border:0; outline:none; text-decoration:none;">
+                                    </td>
+                                    <td align="center" style="padding:0 10px;">
+                                        <img src="https://res.cloudinary.com/db0izp9mj/image/upload/v1771334425/title_hcz9co.png" alt="RMAGEDDON 2026" style="display:block; width:90px; height:90px; min-width:90px; min-height:90px; max-width:90px; max-height:90px; border:0; outline:none; text-decoration:none; margin:0 auto; object-fit:contain;">
+                                    </td>
+                                    <td align="right" width="100" style="width:100px; min-width:100px; max-width:100px;">
+                                        <img src="https://res.cloudinary.com/derjw5vy6/image/upload/v1771443088/rnxg_logo_v3_r4expt.png" alt="RNXG Logo" style="display:block; width:90px; height:90px; min-width:90px; min-height:90px; max-width:90px; max-height:90px; border:0; outline:none; text-decoration:none;">
+                                    </td>
+                                </tr>
+                            </table>
+                            <p class="mission">MISSION : REGISTRATION OPEN....</p>
+                            <h3 class="main-heading">Secure Your Intel. Join the Crew.</h3>
+                            <p class="description">
+                                Join Rmageddon 2026: Where the brightest minds shape the future of tech.
+                                Register now for exclusive briefings, challenges, and elite networking.
+
+
+                            </p>
+                        </div>
+
+                        <!-- ── EVENT DETAILS: 2 rows × 2 cols (EVENTS row removed) ── -->
+                        <div class="event-details">
+                            <table class="event-table" role="presentation">
+                                <tr>
+                                    <td>
+                                        <div style="display:block; text-align:center;">
+                                            <strong>DATE :</strong> 27, 28 Feb &amp; 1 March
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="display:block; text-align:center; margin-top:8px;">
+                                            <strong>VENUE :</strong> SGGSI&amp;T, Vishnupuri, Nanded-431606
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!-- ── CTA BUTTON ── -->
+                        <div class="cta-button">
+                            <a href="https://rmageddon2026.tech/" target="_blank" style="color:#ffffff;text-decoration:none;">REGISTER NOW</a>
+                        </div>
+
+                        <!-- ── CHARACTER ── -->
+                        <div class="pic">
+                            <img src="https://res.cloudinary.com/derjw5vy6/image/upload/f_png,q_auto/v1771177384/Trevor_agdfvi.png" alt="Trevor Character">
+                        </div>
+
+                        <!-- ── FOOTER ── -->
+                        <div class="footer">
+                            <div class="footer-content">
+                                <p><strong>Organized by Team RNXG</strong></p>
+                                <p>Visit <a href="https://rmageddon2026.tech/" target="_blank">rmageddon2026.tech</a></p>
+
+                                <!-- Social Media Icons (img tags) -->
+                                <div class="social-icons">
+
+                                    <!-- LinkedIn -->
+                                    <a href="https://www.linkedin.com/company/rnxg/" target="_blank" title="LinkedIn">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn">
+                                    </a>
+
+                                    <!-- Globe / Website -->
+                                    <a href="https://www.rnxg.co.in/" target="_blank" title="Website">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" alt="Website">
+                                    </a>
+
+                                    <!-- Instagram -->
+                                    <a href="https://www.instagram.com/team_rnxg/" target="_blank" title="Instagram">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
